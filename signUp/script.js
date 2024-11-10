@@ -6,44 +6,10 @@ let btn = document.querySelector(".sign-up")  ;
 let formContainer = document.querySelector(".form-container");
 let main = document.querySelector("main");
 
-// window.onload = ()=>{
-//     // let div = document.createElement("div");
-//    formContainer.innerHTML =`
-//     <form action="" >
-//             <div class="input">
-//                 <input autocomplete="on" class="name" type="text" placeholder="Enter Your Name">
-//             </div>
-//             <div class="input">
-//                 <input autocomplete="on"  class="email"type="email" placeholder="Enter email">
-//             </div>
-//             <div class="input">
-//                 <input autocomplete="on"  class="password"type="password" placeholder="Enter Password">
-//             </div>
-//             <div class="input">
-//                 <input autocomplete="on"  class="confirm"type="password" placeholder="Confirm Password">
-//             </div>
-    
-    
-//             <button onclick ="btn(event)" class="sign-up">
-//                 <p>Sign Up</p>
-//                 <div class="button-bg"></div>
-//             </button>
-        
-             
-//         </form>
-
-         
-//    `
-// // div.appendChild(formContainer)
-// //    main.appendChild(formContainer);
-
-
-
-// }
 
 btn.addEventListener("click",(event)=>{
     // console.log("hi")
-    event.preventDefault();
+    // event.preventDefault();
     if (name.value == ""){
         alert("Enter Your Name !!");
         return;
@@ -80,11 +46,13 @@ let arr = [];
                 if(email.value == value.email){
                     alert("This Email already Exists")
                     return;
-                }else{
-                    user.push(obj);
-                    localStorage.setItem("user", JSON.stringify(user));
                 }
-            })
+            });
+
+            user.push(obj);
+            localStorage.setItem("user", JSON.stringify(user));
+            alert("Congratulations !! Your Registration is Successfull !!")
+            return;
           
         }
        }
@@ -102,34 +70,33 @@ let arr = [];
     confirmPass.value = ""
 });
 
-let signUp = document.querySelector(".sign1");
-let signIn = document.querySelector(".sign2");
-console.log(signUp)
-
- signIn.addEventListener ("click",(event)=>{
-    formContainer.remove();
-    let div = document.createElement("div");
-    div.classList.add("form-container");
-    // form.setAttribute("Action" , "./")
-    div.innerHTML = `
-    <h1 class="login">Login Credentials</h1>
-    <div class = "form">
-     <form action="" >
-        <div class="input">
-            <input autocomplete="on"  class="email"type="email" placeholder="Enter email">
-        </div>
-        <div class="input">
-            <input autocomplete="on"  class="password"type="password" placeholder="Enter Password">
-        </div>
-        <button class="sign-up">
-            <p>Sign Up</p>
-            <div class="button-bg"></div>
-        </button>
-    </form>
-    </div>
-    `
-    main.appendChild(div);
-});
 
 // 
 // localStorage.clear()
+
+let darkBall = document.querySelector(".dark-ball")
+darkBall.style.left = "1px";
+
+darkBall.addEventListener("click" , () =>{
+   if (darkBall.style.left == "1px"){
+    darkBall.style.left = "34px"
+    document.querySelector("header").style.backgroundColor = "#4F2EE8";
+    // document.querySelector("form-container").style.backgroundColor = "#4F2EE8"
+    document.body.style.backgroundColor = "#000";
+    document.body.style.color = "#fff";
+    document.querySelector("header").style.borderColor = "#fff"
+    document.querySelectorAll(".see-more").forEach((value) =>{
+        value.style.color = "#fff"
+    })
+
+   }else{
+    darkBall.style.left = "1px";
+    document.body.style.backgroundColor = "#4F2EE8";
+    document.body.style.color = "#000";
+    document.querySelector("header").style.borderColor = "#000"
+    document.querySelectorAll(".see-more").forEach((value) =>{
+        value.style.color = "#000"
+    })
+
+   }
+});

@@ -32,7 +32,19 @@ header{
     background-color: #4F2EE8;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.signup-button:hover{
+    background-color: rgb(223, 190, 7);
+   transition: 0.2s ease-in;
+    color: black;
+}
+
+.signup-button:hover span{
+    background-color: black;
+    border-radius: 50%;
 }
 
 .right{
@@ -163,8 +175,9 @@ main{
 .categories-name:hover{
     color: #4F2EE8;
     font-weight: bold;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
     text-transform: uppercase;
+    text-shadow: 0 0px 50px #4F2EE8;
 }
 /* 
 .categories h1{
@@ -266,6 +279,14 @@ font-weight: bold;
     background-color: transparent;
     border: 2px solid #4F2EE8;
     text-transform: uppercase;
+}
+
+.see-more:hover{
+    background-color: #6f55e3;
+    color: white;
+    transform: scale(1.1) translatey(-5px);
+    transition: 0.2s ease-out;
+    box-shadow: 0 10px 20px rgb(162, 162, 162);
 }
 
 
