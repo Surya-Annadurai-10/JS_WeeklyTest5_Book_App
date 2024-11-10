@@ -1,14 +1,14 @@
 # Book App #
 A simple web application built with HTML, CSS, and JavaScript that allows users to manage their personal library. This app includes a dark mode toggle, displays books by category, and offers signup/signin functionality for user accounts. Users can view book details, filter books by category, and save their personal book collection.
-
+## Hosted Link :
+You can view the live demo of the app here [Click Here]()
 #Features
 - Dark Mode: Switch between light and dark themes for a better user experience.
 - Book Details: View detailed information about each book, including title, author, description, and cover image.
 - Category-based Book Display: Filter books based on categories such as fiction, non-fiction, science, and more.
 - Signup/Signin: Secure user authentication allowing users to create accounts and log in to save their book collections.
 - Add/Edit/Delete Books: Users can manage their books (add new books, edit existing ones, and delete books from their collection).
-Demo
-You can view the live demo of the app here [Click Here]()
+
 
 # Tech Stack
 ## Frontend:
@@ -45,7 +45,6 @@ You can view the live demo of the app here [Click Here]()
 
 - After signup, users can log in (signin) using their credentials. This feature ensures that users can save and retrieve their personal book collections.
 
-## Note: The app uses localStorage to simulate user authentication, but you could integrate a real authentication system (e.g., Firebase Authentication) for production.
 
 # Usage
 ## Signup/Signin:
