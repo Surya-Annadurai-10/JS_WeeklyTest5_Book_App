@@ -50,6 +50,23 @@ header h2{
     font-size: 2rem;
 }
 
+.signup-button{
+    text-decoration: none;
+}
+
+
+.signup-button:hover{
+    background-color: rgb(223, 190, 7);
+   transition: 0.2s ease-in;
+    color: black;
+}
+
+.signup-button:hover span{
+    background-color: black;
+    border-radius: 50%;
+}
+
+
 .dark-box{
     width: 60px;
     height: 25px;
@@ -128,6 +145,7 @@ main{
     border-radius: 25px;
     font-size: 1.5rem;
     padding: 1rem;
+    background-color: transparent;
    box-shadow: 0 0 20px rgb(162, 162, 162);
 }
 
@@ -200,7 +218,7 @@ cursor: pointer;
 color: grey;
 position:absolute;
 bottom: 14%;
-left: 40%;
+left: 45%;
 }
 
 .sign a{

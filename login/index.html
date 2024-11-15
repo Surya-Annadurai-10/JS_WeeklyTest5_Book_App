@@ -21,19 +21,19 @@
                 <div class="dark-ball"></div>
                
             </div>
-            <button class="signup-button">
+            <a href="../signUp/index.html" class="signup-button">
                 <p class="signup">Sign Up</p>
-                <span style="color : #eac645" class="material-symbols-outlined">
+                <span style="color : #eac645;" class="material-symbols-outlined">
                     arrow_right_alt
-                    </span>
-            </button>
+                </span>
+            </a>
         </div>
     </header>
 
 <main>
     <div class="form-container">
        
-        <form class="form-box"  action="../home/index.html">
+        <form class="form-box"  action="../home/index.html" onsubmit="return loginValidation()">
             <h1 class="login">Login Credentials</h1>
        
              <div class="form" >
@@ -51,13 +51,14 @@
              
         </div>
        
-     
+     </form>
+     </div>
 </main>
 
 <div class="sign">
     <a href="../signUp/index.html"> <button  class="sign1">Sign Up</button></a>
     <a href="#"> <button  class="sign2">Sign In</button></a>
-</div>
+ </div>
 <script src="login.js"></script>
 </body>
 </html>

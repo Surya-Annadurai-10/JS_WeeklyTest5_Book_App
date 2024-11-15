@@ -32,11 +32,23 @@ header{
     height: 55px;
     padding: 1.5rem;
     border-radius: 20px;
-    border:none ;
+    border:1px solid white ;
     background-color: #4F2EE8;
     color: white;
     font-weight: bold;
     font-size: 1rem;
+}
+
+.signup-button:hover{
+    background-color: rgb(223, 190, 7);
+   transition: 0.2s ease-in;
+    color: black;
+    border: none;
+}
+
+.signup-button:hover span{
+    background-color: black;
+    border-radius: 50%;
 }
 
 .right{
@@ -125,6 +137,7 @@ main{
     border-radius: 25px;
     font-size: 1.5rem;
     padding: 1rem;
+    background-color: transparent;
    box-shadow: 0 0 20px rgb(162, 162, 162);
 }
 
